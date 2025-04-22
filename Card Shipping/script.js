@@ -7,6 +7,7 @@ let quantityElem = document.getElementById('quantity');
 let textVoucherElem = document.getElementById('textVoucher');
 let codeVoucher = document.getElementById('codeVoucher');
 
+
 subTotalElem.innerHTML = priceElem.innerHTML;
 function totalAll(subTotal, shipping = 0, discount = 0){
   return Number(subTotal) + Number(shipping) - Number(discount); // jadi total nya di tambah dengan ongkir lalu jika dia ada diskon maka di kurang

@@ -47,10 +47,19 @@ function btnVoucher(){
   let inputVoucher = codeVoucher.value;
   // console.log(inputVoucher);
   if (inputVoucher === "abudzar") {
+    textVoucherElem.innerHTML = "Voucher 20% Berhasil di gunakan";
+    textVoucherElem.classList.remove('applied');
+    textVoucherElem.classList.add('success');  
     discountElem.innerHTML = 2000;
   }else if (inputVoucher === "baraka") {
+     textVoucherElem.innerHTML = "Voucher 50% Berhasil di gunakan";
+     textVoucherElem.classList.remove('applied');
+     textVoucherElem.classList.add('success');
      discountElem.innerHTML = 5000;
   }else{
+    textVoucherElem.innerHTML = "Voucher Salah";
+    textVoucherElem.classList.remove('applied');
+    textVoucherElem.classList.add('reject');
     discountElem.innerHTML = 0;
   }
   

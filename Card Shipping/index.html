@@ -70,29 +70,29 @@
           <div class="product-details">
             <div class="product-name">
               <h3>Sony wireless headphones</h3>
-              <p class="price">£320.45</p>
+              <p class="price" id="price">10000</p>
             </div>
             <div class="quantity">
-              <button class="minus">&minus;</button>
-              <input id="text" value="0" />
-              <button onclick="pertambahan(' + ')">&plus;</button>
+              <button class="minus" onclick="kurang(1)">&minus;</button>
+              <input type="text" value="1"  id="quantity"/>
+              <button class="plus" onclick="tambah(1)">+</button>
             </div>
           </div>
         </div>
         <div class="discount">
           <label for="discount-code">Gift Card / Discount code</label>
           <div class="discount-code">
-            <input type="text" />
-            <button class="apply">Apply</button>
+            <input type="text"  id="codeVoucher"/>
+            <button class="apply" onclick="btnVoucher()">Apply</button>
           </div>
-          <span class="applied">Voucher Successfully Applied</span>
+          <span class="applied" id="textVoucher"></span>
         </div>
         <div class="summary">
-          <p>Sub total: <span>£316.55</span></p>
-          <p>Tax: <span>£3.45</span></p>
-          <p>Shipping: <span>Free</span></p>
-          <p>Discount: <span>£3.45</span></p>
-          <p class="total">Total: <span>£320.45</span></p>
+          <p>Sub total: <span id="subTotal"></span></p>
+          <!-- <p>Tax: <span>3.45</span></p> -->
+          <p>Shipping: <span id="shipping">2000</span></p>
+          <p>Discount: <span id="discount"></span></p>
+          <p class="total">Total: <span id="total"></span></p>
         </div>
       </div>
     </section>

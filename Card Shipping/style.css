@@ -9,9 +9,10 @@ body {
 }
 .container-shipping {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 1em;
+  height: 100vh;
 }
 
 .form-container {
@@ -122,6 +123,7 @@ select#saved-address {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: max-content;
+  margin-left: 50px;
 }
 
 .order-summary h2 {
@@ -220,11 +222,22 @@ select#saved-address {
   background-color: #fff;
   color: #007bff;
 }
-.discount .applied {
-  display: none;
+.discount .success {
+  display: block;
   margin-top: 10px;
   color: green;
   font-weight: bold;
+}
+.discount .reject {
+  display: block;
+  margin-top: 10px;
+  color: red;
+  font-weight: bold;
+}
+
+.discount .applied{
+  display: none;
+
 }
 
 .summary {
